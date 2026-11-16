@@ -24,25 +24,36 @@ npm run build && npm start
 
 ## Folder structure
 
+```
 sofaliving/
 ├── app/
-│ ├── layout.js # fonts, metadata
-│ ├── page.js # holds config state, composes sections
-│ └── globals.css # Tailwind + shared classes
+│   ├── layout.js          # fonts, metadata
+│   ├── page.js            # holds config state, composes sections
+│   └── globals.css        # Tailwind + shared classes
 ├── components/
-│ ├── Navbar.jsx Hero.jsx Footer.jsx About.jsx
-│ ├── FeaturedSofas.jsx SofaCard.jsx
-│ ├── SofaCustomiser.jsx ColourSelector.jsx OptionGroup.jsx
-│ ├── PriceSummary.jsx SofaPreview.jsx
-│ └── EnquiryForm.jsx
-├── data/sofas.js # models, colours, fabrics, seatings, copy
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── FeaturedSofas.jsx
+│   ├── SofaCard.jsx
+│   ├── SofaCustomiser.jsx
+│   ├── ColourSelector.jsx
+│   ├── OptionGroup.jsx
+│   ├── PriceSummary.jsx
+│   ├── SofaPreview.jsx
+│   ├── About.jsx
+│   ├── EnquiryForm.jsx
+│   └── Footer.jsx
+├── data/
+│   └── sofas.js           # models, colours, fabrics, seatings, copy
 ├── lib/
-│ ├── pricing.js # price + colour-validity logic
-│ └── validation.js # form rules
-├── public/images/ # product and preview photos
-└── tailwind.config.js postcss.config.js jsconfig.json
-
-
+│   ├── pricing.js         # price + colour-validity logic
+│   └── validation.js      # form rules
+├── public/
+│   └── images/            # product and preview photos
+├── tailwind.config.js
+├── postcss.config.js
+└── jsconfig.json
+```
 
 ## How it works
 - `page.js` keeps one `config` object: `{ modelId, colourId, fabricId, seatingId }`.
