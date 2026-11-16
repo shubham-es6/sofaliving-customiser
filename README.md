@@ -3,7 +3,8 @@
 Responsive single-page site built with **Next.js 14 (App Router), React, JavaScript and Tailwind CSS**. No backend.
 
 ## Live demo
-<!-- Vercel link yahan add karo -->
+
+https://sofaliving-customiser.vercel.app
 
 ## Run
 ```bash
