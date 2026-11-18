@@ -54,9 +54,14 @@ export default function Footer() {
         {/* Links */}
         <nav aria-label="Footer" className="mt-14 flex flex-col gap-6 border-t border-line pt-8 md:flex-row md:flex-wrap md:items-center md:justify-between">
           <ul className="flex flex-wrap gap-x-7 gap-y-3 text-sm text-ink">
+            {NAV_LINKS.map((l) => (
+              <li key={l.href}>
+                <a href={l.href} className="font-medium hover:text-clay">{l.label}</a>
+              </li>
+            ))}
             {LEGAL.map((l) => (
               <li key={l}>
-                <a href="#" className="hover:text-clay">{l}</a>
+                <a href="#home" className="text-stone hover:text-clay">{l}</a>
               </li>
             ))}
           </ul>

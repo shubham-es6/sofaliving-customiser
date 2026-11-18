@@ -73,6 +73,6 @@ sofaliving/
 - Preview photos exist only for some colours (Luna: Beige, Grey; Urban: Beige, Charcoal; Cloud: Beige, Blue). Other colours show the first available photo.
 - Changing fabric or seating updates the price and summary, but not the photo.
 - Enquiry form does not send email or save data. It only shows a success message.
-- Footer legal links (Privacy Policy, Terms, etc.) are placeholders (`#`).
+- Footer legal links (Privacy Policy, Terms, etc.) are placeholders that scroll to the top. Footer section links (Home, Collections, Customiser, About, Enquiry) work.
 - Images are for training/demo use only.
 - No automated tests.

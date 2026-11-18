@@ -3,7 +3,7 @@ import { formatPrice } from "@/lib/pricing";
 
 export default function SofaCard({ sofa, onCustomise }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-sm">
+    <article className="flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-sm">
       <div className="relative aspect-[4/3] overflow-hidden bg-sand">
         <Image
           src={sofa.image}
@@ -37,10 +37,11 @@ export default function SofaCard({ sofa, onCustomise }) {
           ))}
         </ul>
 
+        <div className="mt-auto pt-8">
         <button
           type="button"
           onClick={() => onCustomise(sofa.id)}
-          className="mt-8 flex w-full items-center justify-center gap-2 rounded-full border border-clay py-3 text-sm text-clay transition-colors hover:bg-clay hover:text-cream"
+          className="flex w-full items-center justify-center gap-2 rounded-full border border-clay py-3 text-sm text-clay transition-colors hover:bg-clay hover:text-cream"
         >
           Customise {sofa.name}
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -48,6 +49,7 @@ export default function SofaCard({ sofa, onCustomise }) {
             <path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0M14 4v4M8 10v4M16 16v4" />
           </svg>
         </button>
+        </div>
       </div>
     </article>
   );
